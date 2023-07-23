@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Traveling</string>
+    <string name="titulo">Tu App de Viajes</string>
+    <string name="introduccion">Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar. Si eres tu? No lo dudes y accede a nuestra app y descubriras miles de destinos y facilidades para alquilar coches, ver el tiempo...\n</string>
+    <string name="Continuar">Siguiente</string>
+    <string name="titulo_menu">Próximos viajes</string>
+    <string name="subContainer1">USA, Los Angeles - 2 semanas</string>
+    <string name="subContainer1Text">Ciudad de los Angeles</string>
+    <string name="subContainer2Text">Vacaciones en la playa</string>
+    <string name="subContainer2">Maldivas - 3 semanas</string>
+    <string name="login">Registrate</string>
+    <string name="pass">Contraseña</string>
+    <string name="forgot">Olvidaste la contraseña</string>
+    <string name="count">¿No tienes cuenta?</string>
+    <string name="nueva">Nueva contraseña</string>
+    <string name="crea">Crea una cuenta</string>
+    <string name="tarde">Esta función se implementara mas adelante</string>
+    <string name="title_activity_registro">activity_registro</string>
+    <string name="comotellamas">¿Comó te llamas?</string>
+    <string name="apellido">¿Y tu apellido?</string>
+    <string name="edad">¿Cuantos años tienes?</string>
+    <string name="meapunto">Me apunto</string>
+    <string name="politicadeprivacidad">Política de Privacidad</string>
+    <string name="vercondiciones">Ver Condiciones</string>
+    <string name="registro">Registro</string>
+</resources>

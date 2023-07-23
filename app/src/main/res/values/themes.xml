@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TravelingV1" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Primary colors-->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+
+        <!--Secondary colors-->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+
+        <!--Windows colors-->
+        <item name="android:windowBackground">@color/windowsBackground</item>
+
+
+        <!--text Apperance-->
+        <item name="textAppearanceTravellingV1H1">@style/TextAppearance.TravellingV1.Headline1</item>
+        <item name="textAppearanceTravellingV1H2">@style/TextAppearance.TravellingV1.Headline2</item>
+        <item name="textAppearanceTravellingV1H3">@style/TextAppearance.TravellingV1.Headline3</item>
+        <item name="textAppearanceTravellingV1H4">@style/TextAppearance.TravellingV1.Headline4</item>
+        <item name="textAppearanceTravellingV1H5">@style/TextAppearance.TravellingV1.Headline5</item>
+        <item name="textAppearanceTravellingV1H6">@style/TextAppearance.TravellingV1.Headline6</item>
+        <item name="textAppearanceTravellingV1Bd1">@style/TextAppearance.TravellingV1.Body1</item>
+        <item name="textAppearanceTravellingV1Bd2">@style/TextAppearance.TravellingV1.Body2</item>
+        <item name="textAppearanceTravellingV1Btt">@style/TextAppearance.TravellingV1.Button</item>
+        <item name="textAppearanceTravellingV1Cap">@style/TextAppearance.TravellingV1.Caption</item>
+        <item name="textAppearanceTravellingV1OverL">@style/TextAppearance.TravellingV1.Overline</item>
+
+
+    </style>
+
+
+    <style name="Theme.TravelingV1" parent="Base.Theme.TravelingV1" />
+</resources>

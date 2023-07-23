@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Traveling</string>
+<string name="titulo">Your Travel App</string>
+<string name="introduccion">Hello, we are looking for millions of users with interest and desire to travel. If this is you? Don\'t hesitate and access our app and you will discover thousands of destinations and facilities to rent a car, check the weather...</string>
+<string name="Continuar">Next</string>
+<string name="titulo_menu">Upcoming meetups</string>
+<string name="subContainer1">USA, Los Angeles - 2 weeks</string>
+<string name="subContainer1Text">City os Los angeles</string>
+<string name="subContainer2Text">Beach vacation</string>
+<string name="subContainer2">Maldives - 3 weeks</string>
+<string name="login">Login</string>
+<string name="pass">Password</string>
+<string name="forgot">Forgot password</string>
+<string name="count">Do you have an account?</string>
+<string name="nueva">Get new</string>
+<string name="crea">Create new</string>
+<string name="tarde">This function will be implemented later</string>
+</resources>

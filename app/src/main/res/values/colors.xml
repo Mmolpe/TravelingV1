@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="windowsBackground">#363636</color>
+    <color name="primaryColor">#00d7e9</color>
+    <color name="primaryLightColor">#64E1EF</color>
+    <color name="primaryDarkColor">#00666b</color>
+    <color name="secondaryColor">#f2e058</color>
+    <color name="secondaryLightColor">#faf4c2</color>
+    <color name="secondaryDarkColor">#e27417</color>
+    <color name="primaryTextColor">#FF000000</color>
+    <color name="secondaryTextColor">#FF000000</color>
+    <color name="onPrimary">#00cde4</color>
+    <color name="onSecondary">#f0db3a</color>
+    <color name="TextLight">#FF737979</color>
+    <color name="BackgroundFavorite">#9273CA</color>
+    <color name="BackgroundMontañas">#CF7ADD</color>
+    <color name="BackgroundPersona">#EBE183</color>
+    <color name="BackgroundRegistro">#7BCFAA</color>
+    <color name="BackgroundRegistroInput">#A4C8B9</color>
+
+</resources>

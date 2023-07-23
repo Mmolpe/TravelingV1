@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainMenu">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_titulo_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/titulo_menu"
+        android:textAppearance="?textAppearanceTravellingV1H4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialCamara"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@color/primaryLightColor"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/baseline_add_a_photo_24"
+        app:iconGravity="textStart"
+        app:iconSize="35dp"
+        app:iconTint="@color/primaryTextColor"
+        app:layout_constraintStart_toStartOf="@+id/main_titulo_menu"
+        app:layout_constraintTop_toBottomOf="@+id/main_titulo_menu">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialFavoritos"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        app:backgroundTint="@color/BackgroundFavorite"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/baseline_favorite_24"
+        app:iconGravity="textStart"
+        app:iconSize="35dp"
+        app:iconTint="@color/primaryTextColor"
+        app:layout_constraintStart_toEndOf="@+id/materialCamara"
+        app:layout_constraintTop_toTopOf="@+id/materialCamara">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialMontañas"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        app:backgroundTint="@color/BackgroundMontañas"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/baseline_filter_hdr_24"
+        app:iconGravity="textStart"
+        app:iconSize="35dp"
+        app:iconTint="@color/primaryTextColor"
+        app:layout_constraintStart_toEndOf="@+id/materialFavoritos"
+        app:layout_constraintTop_toTopOf="@+id/materialFavoritos">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialPersona"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        app:backgroundTint="@color/BackgroundPersona"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/baseline_face_24"
+        app:iconGravity="textStart"
+        app:iconSize="35dp"
+        app:iconTint="@color/primaryTextColor"
+        app:layout_constraintStart_toEndOf="@+id/materialMontañas"
+        app:layout_constraintTop_toTopOf="@+id/materialMontañas">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/materialCamara">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:srcCompat="@drawable/image_container1">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/subContiner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subContainer1"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/container"
+                android:textAppearance="?textAppearanceTravellingV1Bd1">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textContiner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subContainer1Text"
+                android:textAppearance="?textAppearanceTravellingV1H5"
+                app:layout_constraintStart_toStartOf="@+id/subContiner1"
+                app:layout_constraintTop_toBottomOf="@+id/subContiner1">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:srcCompat="@drawable/image_container2">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/subContiner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/subContainer2"
+                android:textAppearance="?textAppearanceTravellingV1Bd1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/container2">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textContiner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subContainer2Text"
+                android:textAppearance="?textAppearanceTravellingV1H5"
+                app:layout_constraintStart_toStartOf="@+id/subContiner2"
+                app:layout_constraintTop_toBottomOf="@+id/subContiner2">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

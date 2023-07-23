@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View">
+
+        </import>
+        <variable
+            name="activity"
+            type="es.travelworld.travelingv1.MainRegistro" />
+        <variable
+            name="user"
+            type="es.travelworld.travelingv1.User" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundRegistro"
+        tools:context=".MainRegistro">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/registro"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:titleTextColor="@color/white"
+            android:background="@color/primaryDarkColor"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:srcCompat="@drawable/imagen_registro" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ButtonCamera"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/baseline_camera_alt_24"
+            app:iconSize="35dp"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView2"
+            app:layout_constraintEnd_toEndOf="@+id/appCompatImageView2"
+            app:layout_constraintStart_toStartOf="@+id/appCompatImageView2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nombre"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="35dp"
+            android:hint="@string/comotellamas"
+            app:boxBackgroundColor="@color/BackgroundRegistroInput"
+            app:boxBackgroundMode="filled"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="3dp"
+            app:endIconMode="password_toggle"
+            app:hintTextAppearance="?textAppearanceTravellingV1Bd2"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView2"
+            app:startIconDrawable="@drawable/baseline_face_24"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:text="@={user.name}"
+                android:onTextChanged="@{(text,start,count,after)-> activity.textIntroNombre(text.toString)}"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/apellido"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/apellido"
+            app:boxBackgroundColor="@color/BackgroundRegistroInput"
+            app:boxBackgroundMode="filled"
+            app:boxStrokeWidth="3dp"
+            app:endIconMode="password_toggle"
+            app:hintTextAppearance="?textAppearanceTravellingV1Bd2"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre"
+            app:startIconDrawable="@drawable/baseline_face_24"
+            app:errorEnabled="true">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:text="@={user.subname}"
+                android:onTextChanged="@{(textApe,startApe,countApe,afterApe)-> activity.textIntroApellido(textApe.toString)}"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edad"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            app:boxBackgroundColor="@color/BackgroundRegistroInput"
+            app:boxBackgroundMode="filled"
+            app:boxStrokeWidth="3dp"
+            app:hintTextAppearance="?textAppearanceTravellingV1Bd2"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apellido"
+            app:errorEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textColor="@color/black"
+                android:textAppearance="?textAppearanceTravellingV1Bd1"
+                android:hint="@string/edad"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ButtonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:background="@color/selector"
+            android:text="@string/meapunto"
+            android:textAppearance="?textAppearanceTravellingV1H6"
+            android:textColor="@color/white"
+            app:cornerRadius="5dp"
+            android:enabled="@{user.btnEnable}"
+            app:layout_constraintBottom_toTopOf="@+id/politica"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/politica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginBottom="60dp"
+            android:text="@string/politicadeprivacidad"
+            android:textAppearance="?textAppearanceTravellingV1Bd2"
+            android:textColor="@color/TextLight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ButtonCondiciones"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="@string/vercondiciones"
+            android:textAppearance="?textAppearanceTravellingV1Bd2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/politica"
+            app:layout_constraintStart_toEndOf="@+id/politica"
+            app:layout_constraintTop_toTopOf="@+id/politica" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainLogin">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nomads_city_tour" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-50dp"
+        android:text="@string/login"
+        android:textAppearance="?textAppearanceTravellingV1H5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="@string/login"
+        app:hintTextAppearance="?textAppearanceTravellingV1H5"
+        app:layout_constraintStart_toStartOf="@+id/materialTextView"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="@string/pass"
+        app:endIconMode="password_toggle"
+        app:hintTextAppearance="?textAppearanceTravellingV1H5"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ButtonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/black"
+        android:drawableEnd="@drawable/baseline_login_24"
+        android:drawableTint="@color/onPrimary"
+        android:enabled="true"
+        android:text="@string/login"
+        android:textAppearance="?textAppearanceTravellingV1H6"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputPassword"
+        app:layout_constraintStart_toStartOf="@+id/textInputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textInputPassword" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/TextForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/forgot"
+        android:textAppearance="?textAppearanceTravellingV1Bd2"
+        android:textColor="@color/TextLight"
+        app:layout_constraintStart_toStartOf="@+id/ButtonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonLogin" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/TextAcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/count"
+        android:textAppearance="?textAppearanceTravellingV1Bd2"
+        android:textColor="@color/TextLight"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/TextForgot"
+        app:layout_constraintTop_toBottomOf="@+id/TextForgot" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ButtonForgot"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="@string/nueva"
+        android:textAppearance="?textAppearanceTravellingV1Bd2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/TextForgot"
+        app:layout_constraintStart_toEndOf="@+id/TextForgot"
+        app:layout_constraintTop_toTopOf="@+id/TextForgot" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ButtonAcount"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="@string/crea"
+        android:textAppearance="?textAppearanceTravellingV1Bd2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/TextAcount"
+        app:layout_constraintStart_toEndOf="@+id/TextAcount"
+        app:layout_constraintTop_toTopOf="@+id/TextAcount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
